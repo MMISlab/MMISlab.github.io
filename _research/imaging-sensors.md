@@ -1,5 +1,5 @@
 ---
-title: "Next-Generation Imaging Sensors"
+title: "Next-Generation Imaging Sensors Development"
 order: 2
 icon: sensor
 summary: "A compact, low-dose intraoral X-ray imaging sensor that gives dentists richer diagnostic information."
