@@ -1,0 +1,80 @@
+# ============================================================
+#  SITE SETTINGS — edit these values, then commit.
+#  (Changes to this file can take 1–2 minutes to appear online.)
+# ============================================================
+
+title: "MMIS Lab"
+long_title: "Multimodal Medical Imaging Systems Lab"
+tagline: "Physics, simulation and AI for quantitative, low-dose medical imaging"
+description: >-
+  The Multimodal Medical Imaging Systems (MMIS) Lab at IIT Jodhpur works on
+  PET, SPECT and X-ray imaging systems, combining physics, simulation and AI
+  to make medical imaging more accurate, quantitative and lower-dose.
+
+institution: "Indian Institute of Technology Jodhpur"
+department: "Department of Bioscience and Bioengineering"
+address: "NH 62, Surpura Bypass Road, Karwar, Jodhpur, Rajasthan 342030, India"
+
+pi_name: "Dr. Parag Khobragade"
+email: "your.email@iitj.ac.in"        # <-- replace with your IITJ email
+
+# ------------------------------------------------------------
+#  RECRUITING HIGHLIGHT
+#  Thin bar at the top of every page + "Join Us" shown as a button.
+#  Set show: false when you are not recruiting.
+# ------------------------------------------------------------
+recruiting:
+  show: true
+  message: "Now recruiting PhD and Master's (M.Tech / MS by Research) students for 2026–27"
+  short_message: "Now recruiting PhD & Master's students"   # shown on phones
+  link_text: "See openings"
+  link: /join/
+
+# Links shown in the footer. Leave "" to hide one.
+links:
+  google_scholar: ""
+  linkedin: ""
+  orcid: ""
+  github: ""
+
+# ------------------------------------------------------------
+#  Top navigation menu (order shown on every page)
+# ------------------------------------------------------------
+navigation:
+  - title: Research
+    url: /research/
+  - title: Team
+    url: /team/
+  - title: Publications
+    url: /publications/
+  - title: News
+    url: /news/
+  - title: Join Us
+    url: /join/
+    highlight: true      # shown as a button while recruiting.show is true
+  - title: Contact
+    url: /contact/
+
+# ------------------------------------------------------------
+#  GitHub Pages settings — usually no need to change.
+#  If your repository is named something other than
+#  <username>.github.io, set baseurl to "/<repository-name>".
+# ------------------------------------------------------------
+url: ""
+baseurl: ""
+
+collections:
+  research:
+    output: true
+    permalink: /research/:name/
+
+permalink: /news/:year/:month/:title/
+markdown: kramdown
+timezone: Asia/Kolkata
+
+exclude:
+  - README.md
+  - EDITING-GUIDE.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

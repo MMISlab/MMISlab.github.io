@@ -1,0 +1,27 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-title">{{ site.long_title }}</p>
+      <p>{{ site.department }}<br>{{ site.institution }}<br>{{ site.address }}</p>
+    </div>
+    <div>
+      <p class="footer-title">Contact</p>
+      <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <ul class="footer-links">
+        {% if site.links.google_scholar != "" %}<li><a href="{{ site.links.google_scholar }}">Google Scholar</a></li>{% endif %}
+        {% if site.links.linkedin != "" %}<li><a href="{{ site.links.linkedin }}">LinkedIn</a></li>{% endif %}
+        {% if site.links.orcid != "" %}<li><a href="{{ site.links.orcid }}">ORCID</a></li>{% endif %}
+        {% if site.links.github != "" %}<li><a href="{{ site.links.github }}">GitHub</a></li>{% endif %}
+      </ul>
+    </div>
+    <div>
+      <p class="footer-title">Explore</p>
+      <ul class="footer-links">
+        {% for item in site.navigation %}<li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© {{ site.time | date: "%Y" }} {{ site.long_title }}, {{ site.institution }}</p>
+  </div>
+</footer>

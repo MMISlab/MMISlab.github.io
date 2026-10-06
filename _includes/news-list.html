@@ -1,0 +1,14 @@
+{% assign limit = include.limit | default: 1000 %}
+<ul class="news-list">
+  {% for post in site.posts limit: limit %}
+  <li class="news-item">
+    <time class="news-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b %Y" }}</time>
+    <div class="news-body">
+      {% if post.category %}<span class="tag">{{ post.category }}</span>{% endif %}
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p>{{ post.excerpt | strip_html | truncatewords: 32 }}</p>
+    </div>
+    {% if post.image %}<img class="news-thumb" src="{{ post.image | relative_url }}" alt="" loading="lazy">{% endif %}
+  </li>
+  {% endfor %}
+</ul>

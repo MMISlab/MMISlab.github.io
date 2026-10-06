@@ -1,0 +1,97 @@
+---
+layout: default
+title: Home
+---
+<section class="hero">
+  <div class="container hero-inner">
+    <p class="eyebrow">{{ site.department }} · {{ site.institution }}</p>
+    <h1>{{ site.long_title }}</h1>
+    <p class="lead">We build and study medical imaging systems — PET, SPECT and X-ray — combining physics, simulation and AI so that images become dependable measurements for diagnosis, treatment planning and therapy.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ '/research/' | relative_url }}">Our research</a>
+      <a class="btn btn-ghost" href="{{ '/join/' | relative_url }}">PhD &amp; Master's openings</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Research areas</h2>
+      <a class="more" href="{{ '/research/' | relative_url }}">All research →</a>
+    </div>
+    <div class="card-grid">
+      {% assign areas = site.research | sort: "order" %}
+      {% for area in areas %}
+      <a class="card card-link" href="{{ area.url | relative_url }}">
+        {% if area.image %}<img class="card-img" src="{{ area.image | relative_url }}" alt="" loading="lazy">{% else %}<span class="card-icon">{% include research-icon.html name=area.icon %}</span>{% endif %}
+        <h3>{{ area.title }}</h3>
+        <p>{{ area.summary }}</p>
+        <span class="card-cta">Learn more →</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <p class="eyebrow eyebrow-light">Admissions 2026–27</p>
+        <h2>Join us as a PhD or Master's student</h2>
+        <ul class="cta-points">
+          <li><strong>PhD</strong> — molecular imaging (PET/SPECT, simulation, AI) and imaging-sensor development</li>
+          <li><strong>M.Tech / MS (Research)</strong> — intraoral X-ray sensor: hardware, FPGA, image processing</li>
+          <li><strong>Research internships</strong> — engineering, physics, computer science and dental graduates</li>
+        </ul>
+      </div>
+      <a class="btn btn-light" href="{{ '/join/' | relative_url }}">Eligibility &amp; how to apply</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-muted">
+  <div class="container split">
+    <div>
+      <h2>Our approach</h2>
+      <p>We work across the whole imaging chain: detector and system physics, Monte Carlo simulation, image reconstruction, AI and task-based image-quality evaluation, through to clinical validation. Projects are carried out with clinical and industry partners so that methods are tested where they will be used.</p>
+    </div>
+    <ul class="pillars">
+      <li><strong>Physics</strong><span>Detectors, system modelling and performance</span></li>
+      <li><strong>Simulation</strong><span>Monte Carlo and digital models of real scanners</span></li>
+      <li><strong>AI</strong><span>Reconstruction, denoising and low-dose imaging</span></li>
+      <li><strong>Clinic</strong><span>Quantification and validation with partners</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% assign pi = site.data.team.first.members.first %}
+    <div class="pi-intro">
+      {% if pi.photo and pi.photo != "" %}
+        <img class="avatar" src="{{ pi.photo | relative_url }}" alt="Photo of {{ pi.name }}" loading="lazy">
+      {% else %}
+        <span class="avatar avatar-initials" aria-hidden="true">PK</span>
+      {% endif %}
+      <div>
+        <p class="eyebrow">Principal Investigator</p>
+        <h2>{{ pi.name }}</h2>
+        <p>{{ pi.short_bio }}</p>
+        <a class="more" href="{{ '/team/' | relative_url }}">Full profile →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Latest news</h2>
+      <a class="more" href="{{ '/news/' | relative_url }}">All news →</a>
+    </div>
+    {% include news-list.html limit=3 %}
+  </div>
+</section>
+

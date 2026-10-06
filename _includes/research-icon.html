@@ -1,0 +1,8 @@
+{% case include.name %}
+{% when "molecular" %}
+<svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="24" cy="24" r="17"/><circle cx="24" cy="24" r="9"/><circle cx="24" cy="24" r="2.5" fill="currentColor" stroke="none"/><path d="M24 3v6M24 39v6M3 24h6M39 24h6"/></svg>
+{% when "sensor" %}
+<svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="12" width="30" height="24" rx="3"/><path d="M15 18h6v6h-6zM27 18h6v6h-6zM15 26h6v4h-6zM27 26h6v4h-6z" stroke-width="1.5"/><path d="M14 6l3 4M24 4v6M34 6l-3 4" stroke-linecap="round"/><path d="M18 36v6M30 36v6" stroke-linecap="round"/></svg>
+{% else %}
+<svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="8" y="8" width="32" height="32" rx="4"/><path d="M8 30l10-10 8 8 6-6 8 8"/></svg>
+{% endcase %}

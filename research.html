@@ -1,0 +1,20 @@
+---
+layout: page
+title: Research
+permalink: /research/
+eyebrow: What we work on
+intro: "We combine physics, simulation and AI to make medical imaging more accurate, more quantitative and lower-dose, working with clinical and industry partners from the start."
+---
+{% assign areas = site.research | sort: "order" %}
+<div class="research-list">
+  {% for area in areas %}
+  <article class="research-row">
+    <span class="card-icon">{% include research-icon.html name=area.icon %}</span>
+    <div>
+      <h2><a href="{{ area.url | relative_url }}">{{ area.title }}</a></h2>
+      <p class="lead-sm">{{ area.summary }}</p>
+      <p><a class="more" href="{{ area.url | relative_url }}">Read more and see openings →</a></p>
+    </div>
+  </article>
+  {% endfor %}
+</div>

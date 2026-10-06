@@ -1,0 +1,150 @@
+# ============================================================
+#  PUBLICATIONS
+#  Newest first. Copy one block (from "- title:" down), paste it
+#  at the top of the list, and edit the values.
+#  type: journal | conference | patent | book-chapter
+#  link: DOI or URL ("" to hide). Bold your name with **…**.
+#  hidden: true keeps an entry off the website.
+# ============================================================
+
+# ---------- 2025 ----------
+- title: "Feasibility of renal function assessment using dynamic 68Ga-EDTA PET-CT imaging"
+  authors: "**P. Khobragade**, N. Varghese, P. Varekar, A. Shanker, R. Krishnappa, B. Spottiswoode, K. Kallur"
+  venue: "EANM 2025, Barcelona, Spain"
+  year: 2025
+  type: conference
+  link: ""
+
+- title: "Providing anatomical context for longitudinal lesion assessment: comparison of two deep learning models"
+  authors: "P. Patil, **P. Khobragade**, H. Yerebakan, G. Platsch, N. Varghese, R. M., M. S. Chakragiri, A. Shanker, B. Spottiswoode, A. Soliman"
+  venue: "EANM 2025, Barcelona, Spain"
+  year: 2025
+  type: conference
+  link: ""
+
+# ---------- Patents (pending) ----------
+- title: "Multitracer quantification in PET-CT imaging"
+  authors: "**P. Khobragade** et al."
+  venue: "Patent application (pending)"
+  year: 2025
+  type: patent
+  link: ""
+
+- title: "Transforming 3D organ masks from AI segmentation to motion-compensated dynamic planar scintigraphy"
+  authors: "J. Perucho, N. Capobianco, **P. Khobragade**"
+  venue: "Patent application (pending)"
+  year: 2025
+  type: patent
+  link: ""
+
+# ---------- 2022 ----------
+- title: "Effect of 68Ga radiotracer on NEMA NU-2 2018 PET-CT performance for Biograph Horizon scanner"
+  authors: "**P. Khobragade**"
+  venue: "Journal of Nuclear Medicine, 63(S2), 3313"
+  year: 2022
+  type: conference
+  link: ""
+
+# ---------- 2019 ----------
+- title: "CT automated exposure control using a generalized detectability index"
+  authors: "**P. Khobragade**, J. Fan, F. Rupcich, D. J. Crotty, T. G. Schmidt"
+  venue: "Medical Physics, 46(1), 140–151"
+  year: 2019
+  type: journal
+  link: ""
+
+- title: "U.S. Patent Application No. 16/020,385"
+  authors: "F. Rupcich, D. Crotty, J. Fan, **P. Khobragade**, T. G. Schmidt"
+  venue: "U.S. Patent Application"
+  year: 2019
+  type: patent
+  link: ""
+
+# ---------- 2018 ----------
+- title: "Application of fractal dimension for quantifying noise texture in computed tomography images"
+  authors: "**P. Khobragade**, J. Fan, F. Rupcich, D. J. Crotty, T. G. Schmidt"
+  venue: "Medical Physics, 45(8), 3563–3573"
+  year: 2018
+  type: journal
+  link: ""
+
+- title: "Automated exposure control for CT using a task-based image quality metric"
+  authors: "**P. Khobragade**, J. Fan, F. Rupcich, D. J. Crotty, T. G. Schmidt"
+  venue: "SPIE Medical Imaging, 10573-16"
+  year: 2018
+  type: conference
+  link: ""
+
+# ---------- 2017 ----------
+- title: "Fractal dimension metric for quantifying noise texture of CT images"
+  authors: "**P. Khobragade**, J. Fan, F. Rupcich, D. J. Crotty, T. G. Schmidt"
+  venue: "SPIE Medical Imaging, 101361F"
+  year: 2017
+  type: conference
+  link: ""
+
+- title: "Effects of window width and level adjustment on detection tasks in CT images"
+  authors: "**P. Khobragade**, J. Fan, F. Rupcich, D. J. Crotty, T. G. Schmidt"
+  venue: "SPIE Medical Imaging, 101361G"
+  year: 2017
+  type: conference
+  link: ""
+
+# ---------- 2016 ----------
+- title: "Hybrid biomaterial with conjugated growth factors and mesenchymal stem cells for ectopic bone formation"
+  authors: "X. Yuan, R. J. Smith Jr, H. Guan, C. N. Ionita, **P. Khobragade**, R. Dziak, S. Andreadis"
+  venue: "Tissue Engineering Part A, 22(13–14), 928–939"
+  year: 2016
+  type: journal
+  link: ""
+
+- title: "Task-based detectability comparison of EFROC and CHO"
+  authors: "**P. Khobragade**, J. Fan, F. Rupcich, D. J. Crotty, T. G. Schmidt"
+  venue: "SPIE Medical Imaging, 97870C"
+  year: 2016
+  type: conference
+  link: ""
+
+# ---------- 2015 ----------
+- title: "Micro-CT based assessment of dental regenerative therapy in canine mandible"
+  authors: "**P. Khobragade**, A. Jain, S. N. Swetadri Vasan et al."
+  venue: "SPIE Medical Imaging, 94171"
+  year: 2015
+  type: conference
+  link: ""
+
+- title: "Initial testing of a 3D printed perfusion phantom using digital subtraction angiography"
+  authors: "R. Wood, **P. Khobragade**, L. Ying et al."
+  venue: "SPIE Medical Imaging, 94170"
+  year: 2015
+  type: conference
+  link: ""
+
+- title: "Combination of spatial and recursive temporal filtering for noise reduction using ROI fluoroscopy"
+  authors: "S. N. Swetadri Vasan, **P. Khobragade**, C. N. Ionita et al."
+  venue: "SPIE Medical Imaging, 941244"
+  year: 2015
+  type: conference
+  link: ""
+
+# ---------- 2014 and earlier ----------
+- title: "Design and initial validation of a precise capillary phantom to test perfusion systems"
+  authors: "R. Wood, G. Lacobucci, **P. Khobragade** et al."
+  venue: "Medical Physics, 41(6), 378"
+  year: 2014
+  type: conference
+  link: ""
+
+- title: "Expert system design for classification of brain waves and epileptic-seizure detection"
+  authors: "P. R. Pal, **P. Khobragade**, R. Panda"
+  venue: "IEEE conference"
+  year: 2011
+  type: conference
+  link: ""
+
+- title: "Classification of EEG signal using wavelet transform and SVM for epileptic seizure detection"
+  authors: "R. Panda, **P. Khobragade**, P. D. Jambhule et al."
+  venue: "IEEE conference"
+  year: 2010
+  type: conference
+  link: ""

@@ -1,0 +1,45 @@
+---
+layout: page
+title: Team
+permalink: /team/
+eyebrow: People
+intro: "The people behind the MMIS Lab."
+---
+{% for group in site.data.team %}
+{% if group.members.size > 0 %}
+<h2 class="group-title">{{ group.group }}</h2>
+<div class="{% if forloop.first %}pi-list{% else %}people-grid{% endif %}">
+  {% for m in group.members %}
+  <article class="person{% if forloop.parentloop.first %} person-pi{% endif %}">
+    {% if m.photo and m.photo != "" %}
+      <img class="avatar" src="{{ m.photo | relative_url }}" alt="Photo of {{ m.name }}" loading="lazy">
+    {% else %}
+      {% assign parts = m.name | remove: "Dr. " | remove: "Prof. " | split: " " %}
+      <span class="avatar avatar-initials" aria-hidden="true">{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}</span>
+    {% endif %}
+    <div class="person-body">
+      <h3>{{ m.name }}</h3>
+      {% if m.role %}<p class="person-role">{{ m.role }}</p>{% endif %}
+      {% if m.bio %}<p>{{ m.bio }}</p>{% endif %}
+      {% if m.interests %}
+      <ul class="chips" aria-label="Research interests">{% for i in m.interests %}<li>{{ i }}</li>{% endfor %}</ul>
+      {% endif %}
+      {% if m.education %}
+      <ul class="edu">{% for e in m.education %}<li>{{ e }}</li>{% endfor %}</ul>
+      {% endif %}
+      <p class="person-links">
+        {% if m.email and m.email != "" %}<a href="mailto:{{ m.email }}">Email</a>{% endif %}
+        {% if m.website and m.website != "" %}<a href="{{ m.website }}">Website</a>{% endif %}
+      </p>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% endif %}
+{% endfor %}
+
+<div class="callout">
+  <h2>Join the team</h2>
+  <p>We are building the group now and have openings for PhD, M.Tech/MS (Research) students and interns.</p>
+  <p><a class="btn btn-primary" href="{{ '/join/' | relative_url }}">See openings</a></p>
+</div>

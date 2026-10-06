@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<article>
+  <section class="page-head">
+    <div class="container narrow">
+      <p class="eyebrow"><a href="{{ '/news/' | relative_url }}">News</a> · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>{% if page.category %} · {{ page.category }}{% endif %}</p>
+      <h1>{{ page.title }}</h1>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container narrow prose">
+      {% if page.image %}
+      <figure class="post-figure">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}" loading="lazy">
+        {% if page.image_caption %}<figcaption>{{ page.image_caption }}</figcaption>{% endif %}
+      </figure>
+      {% endif %}
+      {{ content }}
+      <p class="back-link"><a href="{{ '/news/' | relative_url }}">← All news</a></p>
+    </div>
+  </section>
+</article>

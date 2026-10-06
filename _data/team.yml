@@ -1,0 +1,65 @@
+# ============================================================
+#  TEAM MEMBERS
+#  To add someone: copy one block (from "- name:" down), paste it
+#  under the right group, and change the values.
+#  Photo: upload a square picture to assets/images/team/ and put
+#  its path in "photo". Leave photo: "" to show their initials.
+#  Groups appear on the Team page in this order.
+# ============================================================
+
+- group: "Principal Investigator"
+  members:
+    - name: "Dr. Parag Khobragade"
+      role: "Assistant Professor, Department of Bioscience and Bioengineering"
+      photo: ""                       # e.g. /assets/images/team/parag.jpg
+      email: "your.email@iitj.ac.in"
+      website: ""
+      # Short version (home page) and full version (Team page)
+      short_bio: >-
+        Dr. Parag Khobragade is an imaging scientist with eight years of experience
+        building and evaluating PET-CT and SPECT-CT systems in the medical imaging
+        industry. He leads the MMIS Lab, where his group combines physics,
+        simulation and AI to make medical imaging more quantitative, lower-dose
+        and clinically useful.
+      bio: >-
+        Dr. Parag Khobragade leads the Multimodal Medical Imaging Systems Lab at
+        IIT Jodhpur. Before joining IIT Jodhpur, he spent eight years in the
+        medical imaging industry, where he helped develop and release
+        PET-CT systems, defined their image-quality performance criteria, and led
+        clinical research collaborations with hospitals on renal function
+        imaging, liver function assessment for surgical planning, multitracer
+        PET quantification and AI-based PET denoising. His doctoral work at
+        Marquette University developed task-based image-quality metrics and
+        dose-saving exposure control for CT. He holds patents in CT dose control
+        and PET quantification, received the Outstanding Reviewer Award from
+        Physics in Medicine &amp; Biology (2020), and was named in BW Healthcare's
+        40 Under 40 (2024).
+      interests:
+        - "Quantitative PET and SPECT imaging"
+        - "Task-based image quality and system performance"
+        - "AI for reconstruction and denoising"
+        - "Monte Carlo simulation of imaging systems"
+        - "X-ray and dental imaging"
+      education:
+        - "Ph.D., Biomedical Engineering — Marquette University, USA (2018)"
+        - "M.S., Biomedical Engineering — University at Buffalo (SUNY), USA (2015)"
+        - "B.Tech., Biomedical Engineering — NIT Raipur (2012)"
+
+- group: "PhD Students"
+  members: []
+  # Example:
+  #   - name: "Student Name"
+  #     role: "PhD Scholar (2026–)"
+  #     photo: "/assets/images/team/student-name.jpg"
+  #     email: ""
+  #     website: ""
+  #     bio: "Working on AI-based denoising for SPECT."
+
+- group: "M.Tech / MS (Research) Students"
+  members: []
+
+- group: "Research Interns"
+  members: []
+
+- group: "Alumni"
+  members: []
