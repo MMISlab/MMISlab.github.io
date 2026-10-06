@@ -12,7 +12,7 @@
     - name: "Dr. Parag Khobragade"
       role: "Assistant Professor, Department of Bioscience and Bioengineering"
       photo: ""                       # e.g. /assets/images/team/parag.jpg
-      email: "your.email@iitj.ac.in"
+      email: "paragkhobragade@iitj.ac.in"
       website: ""
       # Short version (home page) and full version (Team page)
       short_bio: >-
