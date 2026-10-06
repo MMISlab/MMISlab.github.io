@@ -3,23 +3,19 @@ layout: page
 title: Publications
 permalink: /publications/
 eyebrow: Output
-intro: "Journal papers, conference proceedings and patents from the lab."
+intro: "Selected publications. Newest first."
 ---
 {% assign pubs = site.data.publications | where_exp: "p", "p.hidden != true" %}
 {% if pubs.size > 0 %}
-  {% assign by_year = pubs | group_by: "year" | sort: "name" | reverse %}
-  {% for y in by_year %}
-  <h2 class="group-title">{{ y.name }}</h2>
-  <ol class="pub-list">
-    {% for p in y.items %}
-    <li class="pub">
-      <p class="pub-title">{% if p.link and p.link != "" %}<a href="{{ p.link }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</p>
-      <p class="pub-authors">{{ p.authors | markdownify | remove: "<p>" | remove: "</p>" }}</p>
-      <p class="pub-venue"><em>{{ p.venue }}</em>{% if p.type %} <span class="tag">{{ p.type }}</span>{% endif %}</p>
-    </li>
-    {% endfor %}
-  </ol>
+<ol class="pub-list" style="list-style: decimal; padding-left: 1.6em;">
+  {% for p in pubs %}
+  <li class="pub">
+    <p class="pub-title">{% if p.link and p.link != "" %}<a href="{{ p.link }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</p>
+    <p class="pub-authors">{{ p.authors | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+    <p class="pub-venue"><em>{{ p.venue }}</em>{% if p.year %}, {{ p.year }}{% endif %}</p>
+  </li>
   {% endfor %}
+</ol>
 {% else %}
-  <p class="empty">The publication list is being updated.{% if site.links.google_scholar != "" %} Meanwhile, see <a href="{{ site.links.google_scholar }}">Google Scholar</a>.{% endif %}</p>
+  <p class="empty">The publication list is being updated.</p>
 {% endif %}
