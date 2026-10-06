@@ -78,3 +78,17 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+# ------------------------------------------------------------
+#  Page designs (layouts) used automatically — do not remove.
+# ------------------------------------------------------------
+defaults:
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: research
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
